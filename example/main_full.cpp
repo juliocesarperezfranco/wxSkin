@@ -150,7 +150,7 @@ bool MyApp::OnInit()
 	wxSkinEngine::Get()->AssignControl(wxT("PlayerFrame"),frame);
 	wxSkinEngine::Get()->AssignControl(wxT("button_open"),btnOpen);
 	wxSkinEngine::Get()->AssignControl(wxT("button_next"),btnNext);
-	wxSkinEngine::Get()->AssignControl(wxT("button_prev)",btnPrev);
+	wxSkinEngine::Get()->AssignControl(wxT("button_prev"),btnPrev);
 	wxSkinEngine::Get()->AssignControl(wxT("button_stop"),btnStop);
 	wxSkinEngine::Get()->AssignControl(wxT("button_play"),btnPlay);
 	wxSkinEngine::Get()->AssignControl(wxT("button_speedup"),btnSup);
