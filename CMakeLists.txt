@@ -1,6 +1,6 @@
 
-## Author:      René Kraus
-## Copyright:   (c) René Kraus
+## Author:      RenÃ© Kraus
+## Copyright:   (c) RenÃ© Kraus
 ## Credits:     Based on initial work by Jorgen Bodde
 ## License:     wxWidgets License
 ##---------------------------------------------------------------------------
@@ -35,7 +35,7 @@ SET(WXW_VERSION "3.0")
 PROJECT( WXSKIN )
 
 ## Find wxWidgets
-FIND_PACKAGE(wxWidgets REQUIRED)
+FIND_PACKAGE(wxWidgets COMPONENTS core base xml adv aui richtext REQUIRED)
 INCLUDE(${wxWidgets_USE_FILE})
 
 ADD_DEFINITIONS( ${WXWIDGETS_DEFINITIONS} )
