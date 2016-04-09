@@ -1,0 +1,71 @@
+Welcome to wxSkin!
+-------------------
+wxSkin is a simple set of addon controls that allow easy creation of skinned applications.
+
+wxSkin is published under the wxWindows license <http://www.wxwidgets.org/licence3.txt>
+with the addendum that you notify the author about projects using wxSkin (consider this "postcard-ware").
+
+(c) René Kraus (aka upCASE) <himself_at_upcase.de>
+
+Using wxSkin
+------------
+First of all download and compile wxWidgets (www.wxwidgets.org). wxSkin was tested with version 2.6.3 and 2.7.2, but it should work with upcoming version as well.
+wxSkin currently supports the MS Windows, Mac OSX and GTK2 ports of wxWidgets. No "PDA"-platforms are supported.
+
+wxSkin can be compiled as a single static library. Building a DLL/so of it might be possible, but is not supported right now.
+
+In order to compile wxSkin, you'll need CMake (http://www.cmake.org/).
+
+Generating projects/makefiles
+----------------------------
+On Windows be sure to have the %WXWIN% environment variable set to your wxWidgets root directory.
+Then simply run CMake and select the following things in the GUI
+	--> Where is the source: {browse to this dir}
+        --> Where to build binaries: {browse to a temp dir for building}
+        --> Generate the files, when prompted for the project generator, choose the IDE you want to use
+	
+On Linux and Mac proceed like this.
+	--> optionally set WXWIN to the wxWidget root dir (export WXWIN=path).
+	--> unzip wxSkin to some directory
+	--> create a directory where you will build wxSkin (mkdir {some_dir})
+	--> enter this directory (cd {some_dir})
+	--> run ccmake (ccmake {path_to_wxSkin_dir})
+	--> adjust the settings in the ncurses GUI that will show up
+	--> if wxWidgets can not be found, manually point the entry WXWIDGETS_ROOT_DIR to the wxWidgets install directory.
+	
+	--> hit 'c' to configure the build
+	--> hit 'g' when it becomes available  to generate the makefiles
+	
+	--> after hitting 'g' ccmake will exit
+	--> simple type 'make' and the build process should begin
+	
+	Ubuntu 11.04
+	------
+	We suppose that you install you wxWidgets from software center
+	1. Make a symbol link of /usr/lib/wx/config/gtk2-unicode-release-2.8, put it in /usr/lib/wx. Name it wx-config.in.
+	2. Set WXWIN to /usr/lib/wx, you can execute the command in terminal "export WXWIN=/usr/lib/wx/"
+	3. cmake and make
+	
+The build process will setup three things:
+- the wxSkin library
+- a simple example
+- a second, more complex example
+
+To build your own projects using wxSkin, simply link with the wxSkin library created in the build process.
+Another option would be to simply include all wxSkin source files when building your project.
+
+Thanks
+-------
+Thanks go out to the wxWidgets community, especially the wxForum (http://wxforum.shadonet.com)
+
+Special thanks go to Jorgen Bodde for serveral things:
+1. creating Guibuilder. wxSkin comes with a modified version to allow instant GUI creation.
+2. providing input and ideas (not only related to wxSkin)
+3. alpha-testing wxSkin
+
+Have fun using wxSkin!
+For comments and suggestions conact me via the wxForum.
+
+Please remember: wxSkin is "postcard-ware". You can use it freely under the wxWidgets license and I won't charge anything for it (at least not in this release :-)).
+It took me quite some time to write wxSkin and I'd like to know if and for what it is being used. So if you use wxSkin for an application, please let me know!
+If you publish an application, send me a link so I can see for myself. Or send me some screenshots, video, animations, whatever...

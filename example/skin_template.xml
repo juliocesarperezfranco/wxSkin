@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Skin name="" author="" comment="" screenshot="" application="" customInfo="">
+	
+	<Transparency red="" green="" blue="" />
+	
+	<Buttons>
+		<default normal="" pressed="" over ="" disabled="" pos="" size="" shown=""/>
+		<label_button normal="" pressed="" over ="" disabled="" pos="" size="" shown=""/>
+	</Buttons> 
+	
+	<Checkboxes>
+		<default normal="" checked="" over="" disabled="" pos="" size="" shown=""/>
+		<label_checkbox normal="" checked="" over="" disabled="" pos="" size="" shown=""/>
+	</Checkboxes>
+	
+	<Radiobuttons>
+		<default normal="" checked="" over="" disabled="" pos="" size="" shown=""/>
+		<label_radio normal="" checked="" over="" disabled="" pos="" size="" shown=""/>
+	</Radiobuttons>
+
+	<Gauges>
+		<default foreground="" background="" disabled="" pos="" size="" shown=""/>
+		<label_gauge foreground="" background="" disabled="" pos="" size="" shown=""/>
+	</Gauges>
+	
+	<Sliders>
+		<default slider="" background="" over="" disabled="" pos="" size="" shown=""/>
+		<label_slider slider="" background="" over="" disabled="" pos="" size="" shown=""/>
+	</Sliders>
+	
+	<Panels>
+		<default background=""  disabled="" pos="" size="" shown=""/>
+		<label_panel background=""  disabled="" pos="" size="" shown=""/>
+	</Panels>
+
+	<Widgets>
+		<label_control pos="" size="" shown="" />
+	</Widgets>
+	
+	<SimpleFrame name="" skin="" movable=""  guibuilder="">
+		<client_area measure="" />
+		<closebox measure="" normal="" over=""/>
+		<minimizebox measure="" normal="" over=""/>
+		<maximizebox measure=""/>
+		<titlebar measure=""/>
+		<titleposition placement=""/>
+		<titlefont name="" size="" weight="" underline="" italic=""/>
+	</SimpleFrame> 
+	
+	<Frame name="" movable="" guibuilder="">
+		<top skin=""/>
+		<top_left skin=""/>
+		<top_right skin=""/>
+		<bottom skin=""/>
+		<bottom_left skin=""/>
+		<bottom_right skin=""/>
+		<left skin=""/>
+		<right skin=""/>
+		<body skin=""/>
+             
+		<closebox relate_to="" measure="" normal="" over=""/>
+		<minimizebox relate_to="" measure="" normal="" over=""/>
+		<maximizebox measure="" skin=""/>
+		<titlebar height=""/>
+		<titleposition placement=""/>
+		<titlefont name="" size="" weight="" underline="" italic=""/>
+	</Frame> 
+</Skin>
